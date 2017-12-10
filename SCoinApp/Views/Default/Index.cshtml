@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Anlık</div>
+            <div class="panel-body">
+                <table class="table table-hover" id="CurrentCointPrice">
+                    <thead>
+                        <tr>
+                            <th>Coin</th>
+                            <th>Fiyat</th>
+                            <th>Son Güncelleme</th>
+                            <th>Aldığım Adet</th>
+                            <th>Harcanan</th>
+                            <th>Şuanki değer</th>
+                            <th>Kazanç</th>
+                            <th style="width:127px">&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="sCoinRow">
+                            <td>SCoin</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="number" min="0" style="width:70px; float:left" class="form-control" value="" />
+                                <button class="btn btn-success" onclick="CoinAlim_Click('sCoinRow')">
+                                    <i class="glyphicon glyphicon-plus"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr id="bitCoinRow">
+                            <td>BitCoin</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="number" min="0" style="width:70px; float:left" class="form-control" value="" />
+                                <button class="btn btn-success" onclick="CoinAlim_Click('bitCoinRow')">
+                                    <i class="glyphicon glyphicon-plus"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr id="ethCoinRow">
+                            <td>Ethereum</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <input type="number" min="0" style="width:70px; float:left" class="form-control" value="" />
+                                <button class="btn btn-success" onclick="CoinAlim_Click('ethCoinRow')">
+                                    <i class="glyphicon glyphicon-plus"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div></div>
+            <div class="panel-heading">Grafik</div>
+            <div class="panel-body">
+
+                <div id="generalChart"></div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
